@@ -1,0 +1,7 @@
+---
+- hosts: example
+  tasks:
+  - name: run java jar
+    script: ./scripts/startService.sh
+    args: 
+      chdir: /root/.jenkins/workspace/emailService/devops

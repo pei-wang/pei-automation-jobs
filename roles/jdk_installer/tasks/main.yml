@@ -1,0 +1,13 @@
+- name: download jdk.
+  get_url: 
+    url: http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
+    dest: /root/jdk-8u144-linux-x64.tar.gz
+    headers: 'Cookie:oraclelicense=accept-securebackup-cookie'
+- name: unzip jdk.
+  shell: tar -zxf jdk-8u144-linux-x64.tar.gz
+- name: creat soft link.
+  shell: ln -s ~/jdk1.7.0_79 jdk
+- name: set jdk_env copy use template.
+- name: execute script to set jdkenv.
+- name: source bash_profile.
+- name: remove files.
